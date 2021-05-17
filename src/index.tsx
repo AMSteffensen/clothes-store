@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { QueryClient, QueryClientProvider } from "react-query";
 
-import client = new QueryClient();
+const client = new QueryClient();
 
 ReactDOM.render(
-<QueryClientProvider client={client}>
-  <App />
-</QueryClientProvider>, 
-document.getElementById("root"));
+  <QueryClientProvider client={client}>
+    <App />
+  </QueryClientProvider>,
+  document.getElementById("root")
+);
